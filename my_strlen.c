@@ -3,7 +3,10 @@
 
 int		my_strlen(const char *s)
 {
-  if (s != NULL && *s != '\0')
-    return (my_strlen(s + 1) + 1);
+  int		i;
+
+  i = 0;
+  while (s != NULL && s[i] != '\0')
+    i++;
   return (0);
 }
